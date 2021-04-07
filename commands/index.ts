@@ -4,5 +4,6 @@ export interface Command {
 }
 
 module.exports = {
-    help: require('./help')
+    help: require('./help'),
+    burp: require('./burp')
 }
