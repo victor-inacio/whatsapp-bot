@@ -18,7 +18,7 @@ module.exports = (message: Message): void => {
 }
 
 function callCommand(command: string, args: Array<string>, message: Message) {
-    commands[command](command, args, message);
+    commands[command].handler(command, args, message);
 }
 
 function commandExists(command: string): Boolean {
